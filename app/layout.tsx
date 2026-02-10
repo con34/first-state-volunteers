@@ -19,14 +19,11 @@ export default function RootLayout({
           {/* Logo + Org Name */}
           <Link href="/">
           <div className="flex items-center gap-2">
-            <img
-              src="/logo.png"
-              alt="First State Volunteers Logo"
-              className="h-20 w-20 object-contain"
-            />
-            <span className="text-white font-bold text-3xl">
-              First State Volunteers
-            </span>
+          <Link href="/" className="flex items-center gap-2">
+  <img src="/logo.png" alt="First State Volunteers Logo" className="h-20 w-20 object-contain" />
+  <span className="text-white font-bold text-3xl">First State Volunteers</span>
+</Link>
+
           </div>
           </Link>
           
