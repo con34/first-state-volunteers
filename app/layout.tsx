@@ -20,9 +20,9 @@ export default function RootLayout({
           <Link href="/">
           <div className="flex items-center gap-2">
             <img
-              src="/logo.png" // put your logo file in /public
+              src="/logo.png"
               alt="First State Volunteers Logo"
-              className="h-25 w-25 object-contain"
+              className="h-20 w-20 object-contain"
             />
             <span className="text-white font-bold text-3xl">
               First State Volunteers
@@ -32,11 +32,21 @@ export default function RootLayout({
           
 
           {/* Navigation links */}
-          <div className="flex gap-4">
-            <Link href="/events" className="hover:underline">Events</Link>
-            <Link href="/request" className="hover:underline">Request</Link>
-            <Link href="/admin" className="hover:underline">Admin</Link>
-          </div>
+          <div className="flex gap-6 text-lg font-medium">
+  <Link href="/events" className="hover:text-blue-200 transition">
+    Events
+  </Link>
+  <Link href="/request" className="hover:text-blue-200 transition">
+    Request
+  </Link>
+  <Link href="/admin" className="hover:text-blue-200 transition">
+    Admin
+  </Link>
+    <Link href="/reference" className="hover:text-blue-200 transition">
+    Reference
+  </Link>
+</div>
+
         </nav>
 
         {/* Page content */}
